@@ -1,0 +1,12 @@
+{
+  "name": "bai06_node_multi_stage",
+  "version": "1.0.0",
+  "description": "Node.js app with multi-stage Docker build",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
