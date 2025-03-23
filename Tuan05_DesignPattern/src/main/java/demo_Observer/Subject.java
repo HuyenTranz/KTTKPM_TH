@@ -1,5 +1,6 @@
-public interface Subject {
+package demo_Observer;
 
+public interface Subject {
     // Đăng ký một đối tượng Observer mới để theo dõi Subject.
     public void register(Observer obj);
 

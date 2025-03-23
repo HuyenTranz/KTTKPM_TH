@@ -1,7 +1,9 @@
+package demo_Observer;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyTopic implements Subject{
+public class MyTopic implements  Subject{
 
     private List<Observer> observers = new ArrayList<Observer>();
     private String message;

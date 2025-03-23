@@ -1,7 +1,9 @@
-public class MyTopicSubscriber implements Observer {
+package demo_Observer;
+
+public class MyTopicSubsriber implements Observer {
     private String name;
     private Subject subject;
-    public MyTopicSubscriber(String nm) {
+    public MyTopicSubsriber(String nm) {
         this.name = nm;
     }
     @Override

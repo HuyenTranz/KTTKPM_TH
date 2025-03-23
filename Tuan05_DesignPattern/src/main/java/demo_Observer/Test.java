@@ -1,12 +1,14 @@
+package demo_Observer;
+
 public class Test {
     public static void main(String[] args) {
         //create subject
         MyTopic topic = new MyTopic();
         //create observers
 
-        Observer obj1 = new MyTopicSubscriber("Obj1");
-        Observer obj2 = new MyTopicSubscriber("Obj2");
-        Observer obj3 = new MyTopicSubscriber("Obj3");
+        Observer obj1 = new MyTopicSubsriber("Obj1");
+        Observer obj2 = new MyTopicSubsriber("Obj2");
+        Observer obj3 = new MyTopicSubsriber("Obj3");
 
         //register observers to the subject
         topic.register(obj1);
