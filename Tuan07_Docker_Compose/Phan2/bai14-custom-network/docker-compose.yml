@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  redis:
+    image: redis
+    container_name: redis_container
+    networks:
+      - my_custom_network
+
+  app:
+    image: node:14
+    container_name: node_app_container
+    command: sh -c "apt update && apt install -y redis-tools && redis-cli -h redis ping && tail -f /dev/null"
+    networks:
+      - my_custom_network
+    depends_on:
+      - redis
+
+networks:
+  my_custom_network:
+    driver: bridge
